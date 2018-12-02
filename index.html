@@ -1,0 +1,30 @@
+<html ng-app="assignment">
+
+<head>
+    <link rel="stylsheet" href="./pages/route/route.css">
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+    <link rel="stylesheet" href="./pages/route/route.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.5/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.20/angular-ui-router.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-resource/1.7.5/angular-resource.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDY5NyNv4KbeBJk0rWc2uJ9Wbskjr4LHrk&libraries=places&callback=initMap"
+        async defer></script>
+    <script src="pages/route/route.js"></script>
+</head>
+
+<body ng-cloak>
+    <div ui-view></div>
+</body>
+
+<!--app level modules-->
+<script src="./app.js"></script>
+<script src="./pages/route/route.module.js"></script>
+
+<!--factories-->
+<script src="./factories/app.factory.js"></script>
+<script src="./factories/route.factory.js"></script>
+
+<!--controlles-->
+<script src='./pages/route/route.ctrl.js'></script>
+
+</html>
